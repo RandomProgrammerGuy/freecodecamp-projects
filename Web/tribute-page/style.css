@@ -5,13 +5,20 @@ html {
 }
 
 body {
-    text-align: center;
     margin: 0 auto;
     width: 50em; 
     line-height: 1.7;
     color: 242424;
     max-width: 50em;
     padding: 4em 1em;
+}
+
+#title {
+    text-align: center;
+}
+
+#main p {
+    text-align: left;
 }
 
 #title h1 {
