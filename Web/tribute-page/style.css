@@ -17,8 +17,14 @@ body {
     text-align: center;
 }
 
-#main p {
+ul {
     text-align: left;
+}
+
+#img-div {
+    font-family: 'Zilla Slab', 'serif';
+    font-style: italic;
+    text-align: center;
 }
 
 #title h1 {
