@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Zilla+Slab:ital,wght@0,400;0,600;1,300;1,400&display=swap');
+
+html {
+    display: block;
+}
+
+body {
+    text-align: center;
+    margin: 0 auto;
+    width: 50em; 
+    line-height: 1.7;
+    color: 242424;
+    max-width: 50em;
+    padding: 4em 1em;
+}
+
+#title h1 {
+    font-family: 'Pacifico', cursive;
+}
+ 
+#title h2 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+}
+
+#main li {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+}
