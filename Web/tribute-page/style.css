@@ -5,18 +5,30 @@ html {
 }
 
 body {
-    margin: 0 auto;
-    width: 50em; 
     line-height: 1.7;
     color: 242424;
-    max-width: 50em;
-    padding: 4em 1em;
-    background: linear-gradient(#614385, #516395);
 }
 
 #title {
     text-align: center;
     line-height: 0.5;
+    background: linear-gradient(#02aab0, #00cdac);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 0;
+    padding: 15em;
+    color: white;
+    max-width: 100%;
+}
+
+#main {
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 4em 1em;
+    width: 50em; 
 }
 
 #title h1 {
