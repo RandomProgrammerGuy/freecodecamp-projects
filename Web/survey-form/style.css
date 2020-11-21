@@ -2,7 +2,7 @@
 
 
 html {
-    background: linear-gradient(#eb3349, #f45c43);
+    background: linear-gradient(to right, #eb3349, #f45c43);
     display: block;
 }
 
@@ -27,6 +27,34 @@ form {
 input {
     width: 100%;
     padding: 10px 10px;
+    margin: 8px 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+input[type=text], input[type=email], input[type=number], textarea {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+textarea {
+    width: 100%;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    max-width: 100%;
+}
+
+input[type=submit] {
+    background-color: white;
+    border: none;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=number]:focus, textarea:focus {
+    border: none;
+    border-bottom: 2px solid white;
 }
 
 h1 {
