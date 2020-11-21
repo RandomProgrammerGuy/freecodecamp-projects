@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Zilla+Slab:ital,wght@0,400;0,600;1,300;1,400&display=swap');
+
+html {
+    display: block;
+}
+
+body {
+    line-height: 1.7;
+    color: 242424;
+}
+
+#title {
+    text-align: center;
+    line-height: 1;
+    background: linear-gradient(#02aab0, #00cdac);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15em;
+    color: white;
+    max-width: 100%;
+}
+
+#main {
+    margin: 0 auto;
+    max-width: 60%;
+    padding: 4em 1em;
+    font-size: 20px;
+}
+
+#title h1 {
+    font-size: 6.5vw;
+}
+
+#title h2 {
+    font-size: 4.5vw;
+}
+
+ul {
+    text-align: left;
+}
+
+#img-div {
+    font-family: 'Zilla Slab', 'serif';
+    font-style: italic;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#title h1 {
+    font-family: 'Pacifico', cursive;
+}
+ 
+#title h2 {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 400;
+}
+
+#main li {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+}
+
+#trinute-link {
+    font-family: 'Zilla Slab', serif;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+a {
+    color: #00cdac;
+}
