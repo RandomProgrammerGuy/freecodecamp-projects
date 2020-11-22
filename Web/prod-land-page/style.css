@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@200&family=Prata&display=swap');
+
+html {
+    background-color: ghostwhite;
+}
+
+body {
+    border-radius: 75px;
+    background-color: rgba(26, 29, 73, 0.74);
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 100px;
+    display: block;
+}
+
+main {
+    margin: 50px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+h1, h2, h3 {
+    font-family: 'Prata', serif;
+    color: bisque;
+}
+
+.heading {
+    color: coral;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: coral;
+    position: fixed;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+  
+  li {
+    float: left;
+}
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  li a:hover {
+    background-color: white;
+    color: black;
+}
+
+p {
+    font-family: 'Bitter', serif;
+    line-height: 1.5;
+    color: white;
+}
+
+#nav-bar {
+    font-family: 'Bitter', serif;
+    line-height: 1.5;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+#email-list {
+    text-align: center;
+    font-family: 'Prata', serif;
+    line-height: 1.5;
+    color: white;
+}
+
+#header-img {
+    max-width: 10%;
+}
+
+#pricing {
+    background-color: coral;
+    padding: 1em;
+    margin: 20px;
+    text-align: center;
+}
+
+.coll {
+    float: left;
+    width: 33.33%;
+  }
+
+#pricing:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input[type=email]{
+    font-family: 'Bitter', serif;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+input[type=email]:focus {
+    border: none;
+    border-bottom: 2px solid white;
+}
+
+input[type=submit] {
+    background-color: coral;
+    color: white;
+    border: none;
+    font-family: 'Bitter', serif;
+    font-size: 12.5px;
+    cursor: pointer;
+    padding: 2.5px;
+}
