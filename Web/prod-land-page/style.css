@@ -53,6 +53,12 @@ ul {
   li {
     float: left;
 }
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
   
   li a {
     display: block;
@@ -73,6 +79,12 @@ p {
     color: white;
 }
 
+img {
+    margin: 0;
+    padding: 0;
+    top: 0px;
+}
+
 #nav-bar {
     font-family: 'Bitter', serif;
     line-height: 1.5;
@@ -80,6 +92,7 @@ p {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    top: 0px;
 }
 
 iframe {
@@ -101,6 +114,7 @@ iframe {
 }
 
 #pricing {
+    display: flex;
     background-color: coral;
     padding: 1em;
     margin: 20px;
