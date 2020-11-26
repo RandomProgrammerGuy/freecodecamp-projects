@@ -1,23 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,500;1,100;1,200&display=swap');
 
-@media screen and (max-width: 600px) {
-    nav {
-        margin: 0%;
-        padding: 0;
-        width: 100%;
-        background-color: rgb(15, 15, 15);
-        height: 25%; 
-        position: fixed;
-        overflow: auto;
-    }
-
-    .navigation {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-}
-
 body {
     display: block;
     float: right;
@@ -85,4 +67,20 @@ li a {
 li a:hover {
     background-color: greenyellow;
     color: black;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        margin: 0%;
+        padding: 0;
+        width: 110%;
+        background-color: rgb(15, 15, 15);
+        height: 25%; 
+        position: fixed;
+        overflow: auto;
+    }
+
+    #context {
+        padding-top: 25%;
+    }
 }
