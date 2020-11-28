@@ -4,7 +4,7 @@ body {
     display: block;
     float: right;
 }
- 
+
 #context {
     margin-left: 25%;
     padding: 1px 15px;
@@ -84,3 +84,4 @@ li a:hover {
         padding-top: 25%;
     }
 }
+
