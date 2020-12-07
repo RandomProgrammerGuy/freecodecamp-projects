@@ -27,66 +27,78 @@ function switchHundred(num) {
     if (num > 10 && num <= 20) {
         tenth = 'X'
         one = String(switchTen(num - 10))
+        ans = tenth + one;
+        return ans;
     }
 
     else if (num > 20 && num <= 30) {
         tenth = 'XX';
         one = String(switchTen(num - 20));
+        ans = tenth + one;
+        return ans;
     }
 
     else if (num > 30 && num <= 40) {
         tenth = 'XXX';
         one = String(switchTen(num - 30));
+        ans = tenth + one;
+        return ans;
     }
 
     else if (num > 40 && num <= 50) {
         tenth = 'XL';
         one = String(switchTen(num - 40));
+        ans = tenth + one;
+        return ans;
     }
 
     else if (num > 50 && num <= 60) {
         tenth = 'L';
         one = String(switchTen(num - 50));
+        ans = tenth + one;
+        return ans;
     }
 
     else if (num > 60 && num <= 70) {
         tenth = 'LX';
         one = String(switchTen(num - 60));
+        ans = tenth + one;
+        return ans;
     }
 
     else if (num > 70 && num <= 80) {
         tenth = 'LXX';
         one = String(switchTen(num - 70));
+        ans = tenth + one;
+        return ans;
     }
 
     else if (num > 80 && num <= 90) {
         tenth = 'LXXX';
         one = String(switchTen(num - 80));
+        ans = tenth + one;
+        return ans;
     }
 
-    else if (num > 90 && num <= 100) {
+    else if (num > 90 && num < 100) {
         tenth = 'XC';
         one = String(switchTen(num - 90));
-    }
-
-    else if (num > 100 && num <= 110) {
-        tenth = 'C';
-        one = String(switchTen(num - 40));
+        ans = tenth + one;
+        return ans;
     }
 }
 
 function convertToRoman(num) {
     var one = '';
-    var tenth = '';
-    var hundredth = '';
-    var thousand = '';
-
+    
     if (num <= 10) {
         one = switchTen();
-    } else if (num <= 110) {
-        switchHundred(num);
-    } else if (num > 110 && num <= 1000) {
+    } else if (num < 100) {
+        one = switchHundred(num);
+    } else if (num > 99 && num <= 1000) {
         switch (num) {
+            case 100:
+                one = 'C'
             case 200:
                 one = 'CC'
             case 300:
@@ -108,8 +120,8 @@ function convertToRoman(num) {
         }
     }
 
-    var ans = thousand + hundredth + tenth + one;
+    var ans = String(one);
     return ans;
 }
    
-   console.log(convertToRoman(80));
+   console.log(convertToRoman(100));
