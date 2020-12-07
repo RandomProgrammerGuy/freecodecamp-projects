@@ -26,6 +26,9 @@ function switchTen(inp) {
 function convertToRoman(num) {
     var one = '';
     var tenth = '';
+    var hundredth = '';
+    var thousand = '';
+
         if (num <= 10) {        
             one = switchTen(num);
         }
@@ -36,12 +39,52 @@ function convertToRoman(num) {
         }
 
         if (num > 20 && num <= 30) {
-            tenth = 'XX'
-            one = String(switchTen(num - 20))
+            tenth = 'XX';
+            one = String(switchTen(num - 20));
         }
 
-    var ans = tenth + one;
+        if (num > 30 && num <= 40) {
+            tenth = 'XXX';
+            one = String(switchTen(num - 30));
+        }
+
+        if (num > 40 && num <= 50) {
+            tenth = 'XL';
+            one = String(switchTen(num - 40));
+        }
+
+        if (num > 50 && num <= 60) {
+            tenth = 'L';
+            one = String(switchTen(num - 50));
+        }
+
+        if (num > 60 && num <= 70) {
+            tenth = 'LX';
+            one = String(switchTen(num - 60));
+        }
+
+        if (num > 70 && num <= 80) {
+            tenth = 'LXX';
+            one = String(switchTen(num - 70));
+        }
+
+        if (num > 80 && num <= 90) {
+            tenth = 'LXXX';
+            one = String(switchTen(num - 80));
+        }
+
+        if (num > 90 && num <= 100) {
+            tenth = 'XC';
+            one = String(switchTen(num - 90));
+        }
+
+        if (num > 100 && num <= 110) {
+            tenth = 'C';
+            one = String(switchTen(num - 40));
+        }
+
+    var ans = thousand + hundredth + tenth + one;
     return ans;
 }
    
-   console.log(convertToRoman(13));
+   console.log(convertToRoman(27));
