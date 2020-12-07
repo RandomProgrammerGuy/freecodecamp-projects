@@ -66,14 +66,16 @@ var romans = [
     'MMM'
 ]
 
+var ans = '';
+
 function convertToRoman(num) {
     for (var index = 0; index < decimals.length; index++) {
         while (decimals[index] <= num) {
-          romanized += romans[index];
+          ans += romans[index];
           num -= decimals[index];
         }
       }
-    return num;
+    return ans;
    }
    
    console.log(convertToRoman(2));
