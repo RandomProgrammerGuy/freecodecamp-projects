@@ -16,7 +16,9 @@ romanNumerals = {
     'CD': 400, 
     'D': 500,
     'CM': 900, 
-    'M': 1000
+    'M': 1000,
+    'MM': 2000,
+    'MMM': 3000,
 }
 function convertToRoman(num) {
     return num;
