@@ -24,37 +24,24 @@ function switchTen(inp) {
 }   
 
 function convertToRoman(num) {
-    if (num <= 10) {        
-            var ans = switchTen(num);
-            return ans;
+    var one = '';
+    var tenth = '';
+        if (num <= 10) {        
+            one = switchTen(num);
         }
 
-    if (num > 10 && num <= 20) {
-        num -= 10
-        switch (num){
-            case 1:
-                return 'XI';
-            case 2:
-                return 'XII';
-            case 3:
-                return 'XIII';
-            case 4:
-                return 'XIV';
-            case 5:
-                return 'XV';
-            case 6:
-                return 'XVI';
-            case 7:
-                return 'XVII';
-            case 8:
-                return 'XVIII';
-            case 9:
-                return 'XIX'
-            case 10:
-                return 'XX'
+        if (num > 10 && num <= 20) {
+            tenth = 'X'
+            one = String(switchTen(num - 10))
         }
-    }
+
+        if (num > 20 && num <= 30) {
+            tenth = 'XX'
+            one = String(switchTen(num - 20))
+        }
+
+    var ans = tenth + one;
+    return ans;
 }
    
-   
-   console.log(convertToRoman(2));
+   console.log(convertToRoman(13));
